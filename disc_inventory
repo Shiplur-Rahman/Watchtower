@@ -1,0 +1,21 @@
+using System;
+
+class DiscountedInventory
+{
+    static void Main()
+    {
+        Console.Write("Enter item price: ");
+        double price = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter quantity to buy: ");
+        int quantity = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter discount percentage: ");
+        double discount = double.Parse(Console.ReadLine()) / 100;
+
+        double total = price * quantity;
+        double discountedTotal = total - (total * discount);
+
+        Console.WriteLine($"Total after discount: ${discountedTotal:F2}");
+    }
+}
