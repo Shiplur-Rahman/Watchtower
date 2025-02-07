@@ -1,0 +1,22 @@
+using System;
+
+class Watchtower
+{
+    static void Main()
+    {
+        Console.Write("Enter X coordinate: ");
+        int x = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter Y coordinate: ");
+        int y = int.Parse(Console.ReadLine());
+
+        int towerX = 5, towerY = 5; // Example coordinates of the watchtower
+
+        if (x == towerX && y == towerY)
+            Console.WriteLine("You are at the watchtower.");
+        else if (x >= 0 && y >= 0 && x <= 10 && y <= 10)
+            Console.WriteLine("You are inside the watchtower zone.");
+        else
+            Console.WriteLine("You are outside the watchtower zone.");
+    }
+}
