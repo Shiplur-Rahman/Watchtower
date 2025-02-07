@@ -1,0 +1,21 @@
+using System;
+
+class Prototype
+{
+    public string Name { get; set; }
+    public int Version { get; set; }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"Prototype: {Name}, Version: {Version}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Prototype proto = new Prototype { Name = "Alpha", Version = 1 };
+        proto.DisplayInfo();
+    }
+}
