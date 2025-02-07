@@ -1,0 +1,17 @@
+using System;
+
+class BuyingInventory
+{
+    static void Main()
+    {
+        Console.Write("Enter item price: ");
+        double price = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter quantity to buy: ");
+        int quantity = int.Parse(Console.ReadLine());
+
+        double total = price * quantity;
+
+        Console.WriteLine($"Total cost: ${total:F2}");
+    }
+}
